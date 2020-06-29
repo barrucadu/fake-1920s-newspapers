@@ -36,16 +36,15 @@
 \setlength{\lineskip}{0pt}
 
 \makeatletter
-\renewcommand\thesection{}
 \newcommand\Headline[5]{\@startsection{section}{1}{\z@}{#1\baselineskip}{#2\baselineskip}{\centering\fontsize{#3}{#4}\selectfont#5}}
-\newcommand\headlineHUGE{\Headline{0.5}{0.5}{72}{86}{\headlineThree}}
-\newcommand\headlineHuge{\Headline{0.5}{0.5}{40}{48}{\headlineThree}}
-\newcommand\headlineLARGE{\Headline{0.5}{0.5}{36}{44}{\headlineOne}}
-\newcommand\headlineLarge{\Headline{0.5}{0.5}{32}{38}{\headlineOne}}
-\newcommand\headline{\Headline{0.5}{0.5}{28}{34}{\headlineTwo}}
-\newcommand\headlineSmall{\Headline{0.5}{0.5}{24}{28}{\headlineTwo}}
-\newcommand\headlineTiny{\Headline{0.5}{0.5}{\baselineskip}{\baselineskip}{\newspaperBody\scshape}}
 \makeatother
+\newcommand\headlineMainSuper{\Headline{0.5}{0.5}{72}{86}{\headlineThree}}
+\newcommand\headlineMain{\Headline{0.5}{0.5}{32}{38}{\headlineOne}}
+\newcommand\headlineMainSub{\Headline{0.5}{0.5}{24}{28}{\newspaperSlab}}
+\newcommand\headlineMainInner{\Headline{0.5}{0.5}{\baselineskip}{\baselineskip}{\normalfont\itshape}}
+\newcommand\headline{\Headline{0.5}{0.5}{24}{28}{\headlineTwo}}
+\newcommand\headlineSmall{\Headline{0.5}{0.5}{\baselineskip}{\baselineskip}{\normalfont\scshape}}
+\setcounter{secnumdepth}{0}
 
 \newcommand\fullrule{\noindent\smash{\noindent\rule{\linewidth}{0.2mm}}}
 \newcommand\halfrule{\noindent\smash{\noindent\centerline{\rule{0.25\linewidth}{0.2mm}}}}
@@ -55,9 +54,9 @@
 
 \begin{multicols}{3}
 
-\headlineLarge{\hspace{-20pt}Foreign Cables}
+\headlineMain{Foreign Cables}
 
-\headlineTiny{Artist Divorced}
+\headlineSmall{Artist Divorced}
 
 \noindent
 PARIS, August XX (A.~P.)---Mrs.~Lucile Wolfe Burton was granted a
@@ -66,7 +65,7 @@ living in Paris.
 
 \halfrule
 
-\headlineTiny{Gold in Glacier}
+\headlineSmall{Gold in Glacier}
 
 \noindent
 STOCKHOLM, August XX (A.~P.)---Norwegians may seek unknown land, but
@@ -75,7 +74,7 @@ in an arctic glacier, using new electrical prospecting apparatus.
 
 \halfrule
 
-\headlineTiny{Wrecked Train}
+\headlineSmall{Wrecked Train}
 
 \noindent
 MEXICO CITY, August XX (A.~P.)---The train which was wrecked near
@@ -85,7 +84,7 @@ the scene.
 
 \halfrule
 
-\headlineTiny{Prince Drove Truck}
+\headlineSmall{Prince Drove Truck}
 
 \noindent
 LONDON, August XX (A.~P.)---The prince of Wales is becoming a regular
@@ -94,7 +93,7 @@ truck and helped distribute milk to the poor.
 
 \halfrule
 
-\headlineTiny{100 Killed in Battle}
+\headlineSmall{100 Killed in Battle}
 
 \noindent
 TANGIER, Morocco, August XX (A.~P.)---More than a hundred members of
@@ -105,7 +104,7 @@ ravine by the tribesmen, all being captured or killed.
 
 \halfrule
 
-\headlineTiny{Ignores Rebels}
+\headlineSmall{Ignores Rebels}
 
 \noindent
 MANAGUCA, Nigaragua, August XX (A.~P.)---The revolutionary governor at
@@ -116,7 +115,7 @@ the rebels.
 
 \fullrule
 
-\headlineSmall{\hspace{-20pt}Brisbane Denies Marriage Rumors}
+\headline{Brisbane Denies Marriage Rumors}
 
 \noindent
 Mr.~Luther Brisbane, proprietor of Arkham's own Brisbane Brick Works,
@@ -126,7 +125,7 @@ nationally known sugar magnate.
 
 \halfrule
 
-\headlineSmall{\hspace{-20pt}Flashes Badge at Hotel, Pays \$5 Fine}
+\headline{Flashes Badge at Hotel, Pays \$5 Fine}
 
 \noindent
 Flashing a badge that looked like that worn by policemen, Roman
@@ -142,7 +141,7 @@ In district court today he was fined \$5 on charge of being drunk.
 
 \halfrule
 
-\headlineSmall{\hspace{-20pt}Statue Donated to Danvers Asylum}
+\headline{Statue Donated to Danvers Asylum}
 
 \noindent
 The Danvers State Asylum has received an anonymous donation of a
@@ -156,10 +155,10 @@ author.
 
 \noindent
 \begin{minipage}[t][37\baselineskip]{2\columnwidth+1\columnsep}
-\headlineHUGE{\hspace{-37pt}Scotland destroyed}
-\headlineLarge{Earthquake shatters nation!}
+\headlineMainSuper{Scotland destroyed}
+\headlineMain{Earthquake shatters nation!}
 \fancyrule
-\vspace{-16pt}\headlineSmall{\newspaperSlab Hundreds of Thousands of Lives Lost in the Wreckage Caused by the Earthquake, Beyond All Accurate Counting or Identification.}
+\vspace{-16pt}\headlineMainSub{Hundreds of Thousands of Lives Lost in the Wreckage Caused by the Earthquake, Beyond All Accurate Counting or Identification.}
 
 \begin{multicols}{2}
 \noindent
@@ -187,7 +186,7 @@ They theorise that the waters may have hidden some spot of geological
 activity.  The Royal Navy have confirmed that the destruction in the
 coastal Morar area is significant.
 
-\headlineTiny{\normalfont\itshape Light Seen in Sky}
+\headlineMainInner{Light Seen in Sky}
 
 \noindent
 Sailors in the North Sea report seeing a brilliant blue light rising
@@ -196,7 +195,7 @@ this has any connexion to the earthquake.  Some scientists have
 speculated that the disturbance could have released trapped gasses,
 which affected the sunlight in unusual ways.
 
-\headlineTiny{\normalfont\itshape ``Feral Men'' Attacking Troops}
+\headlineMainInner{``Feral Men'' Attacking Troops}
 
 \noindent
 Some dozens of people who felt the vibrations have been driven into
@@ -211,7 +210,7 @@ trying to round up these people in order for them to receive care.
 
 \end{minipage}
 
-\headlineLarge{Murderers Hanged}
+\headlineMain{Murderers Hanged}
 
 \noindent
 NAIROBI (Reuters)---Five Nandi tribesmen, convicted ringleaders of
@@ -231,7 +230,7 @@ justice.
 
 \fullrule
 
-\headlineSmall{\hspace{-20pt}New Guard Needed for Leper House}
+\headline{New Guard Needed for Leper House}
 
 \noindent
 The District Health Department wants another guard for Willard
@@ -245,7 +244,7 @@ employment at night.
 
 \halfrule
 
-\headlineSmall{\hspace{-20pt}Alexandria Veterans Form New Post}
+\headline{Alexandria Veterans Form New Post}
 
 \noindent
 Another post was added to the growing number of the Veterans of
@@ -261,8 +260,8 @@ department officers.
 \begin{minipage}[t][37\baselineskip]{2\columnwidth+1\columnsep}
 \end{minipage}
 
-\headlineLarge{Di Robilant's Aide Dies of Jungle Fever}
-\headline{\newspaperSlab Italian Aviator Recovering}
+\headlineMain{Di Robilant's Aide Dies of Jungle Fever}
+\headlineMainSub{Italian Aviator Recovering}
 
 \noindent
 SAO PAULO (Reuters)---A telegram received at Sao Paulo late today
@@ -292,7 +291,7 @@ soon.
 
 \fullrule
 
-\headlineSmall{\hspace{-20pt}Successful Entertainment at Vaughnville School}
+\headline{Successful Entertainment at Vaughnville School}
 
 \noindent
 One of the enjoyable social features of the Vaghnville community was
