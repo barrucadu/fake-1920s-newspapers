@@ -46,6 +46,6 @@
 \newcommand\headlineSmall{\Headline{-0.5}{0.5}{1}{\normalfont\scshape}}
 \setcounter{secnumdepth}{0}
 
-\newcommand\fullrule{\noindent\smash{\noindent\rule{\linewidth}{0.2mm}}}
-\newcommand\halfrule{\noindent\smash{\noindent\centerline{\rule{0.25\linewidth}{0.2mm}}}}
+\newcommand\fullrule{\noindent\smash{\noindent\rule{\linewidth}{0.3mm}}}
+\newcommand\halfrule{\noindent\smash{\noindent\centerline{\rule{0.25\linewidth}{0.3mm}}}}
 \newcommand\fancyrule{\noindent\smash{\noindent\centerline{\headlineOne\Huge—}}}
