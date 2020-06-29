@@ -1,0 +1,225 @@
+\documentclass[10pt,twoside]{article}
+\usepackage[paperheight=14.75in,paperwidth=11.75in,margin=0.5in]{geometry}
+\usepackage{calc}
+\usepackage{multicol}
+\usepackage{lipsum}
+
+\makeatletter
+\newcommand{\@minipagerestore}{\setlength{\parindent}{1pc}}
+\makeatother
+
+\pagestyle{empty}
+
+\usepackage{fontspec}
+\newfontfamily\newspaperBody{OldStyHPLHS.otf}[
+  Path = \string~/s/fonts/hplhs/,
+  ItalicFont    = OldstItaHPLHS.otf,
+  SmallCapsFont = OldstSCHPLHS.otf]
+\newfontfamily\newspaperSlab{SlabSerHPLHS.otf}[
+  Path = \string~/s/fonts/hplhs/]
+\newfontfamily\headlineOne{HeadlOneHPLHS.otf}[
+  Path = \string~/s/fonts/hplhs/]
+\newfontfamily\headlineTwo{HeadlTwoHPLHS.otf}[
+  Path = \string~/s/fonts/hplhs/]
+\newfontfamily\headlineThree{HeadlModifiedHPLHS.otf}[
+  Path = \string~/s/fonts/hplhs/]
+
+% this is newspaperBody
+\setmainfont{OldStyHPLHS.otf}[
+  Path = \string~/s/fonts/hplhs/,
+  ItalicFont    = OldstItaHPLHS.otf,
+  SmallCapsFont = OldstSCHPLHS.otf]
+
+\nonfrenchspacing
+
+\setlength{\topskip}{0pt}
+\setlength{\lineskiplimit}{-10pt}
+\setlength{\lineskip}{0pt}
+
+\makeatletter
+\renewcommand\thesection{}
+\newcommand\Headline[5]{\@startsection{section}{1}{\z@}{#1\baselineskip}{#2\baselineskip}{\centering\fontsize{#3}{#4}\selectfont#5}}
+\newcommand\headlineHUGE{\Headline{0.5}{0.5}{72}{86}{\headlineThree}}
+\newcommand\headlineHuge{\Headline{0.5}{0.5}{40}{48}{\headlineThree}}
+\newcommand\headlineLARGE{\Headline{0.5}{0.5}{36}{44}{\headlineOne}}
+\newcommand\headlineLarge{\Headline{0.5}{0.5}{32}{38}{\headlineOne}}
+\newcommand\headline{\Headline{0.5}{0.5}{28}{34}{\headlineTwo}}
+\newcommand\headlineSmall{\Headline{0.5}{0.5}{24}{28}{\headlineTwo}}
+\newcommand\headlineTiny{\Headline{0.5}{0.5}{\baselineskip}{\baselineskip}{\newspaperBody\scshape}}
+\makeatother
+
+\newcommand\fullrule{\noindent\smash{\noindent\rule{\linewidth}{0.2mm}}}
+\newcommand\halfrule{\noindent\smash{\noindent\centerline{\rule{0.25\linewidth}{0.2mm}}}}
+\newcommand\fancyrule{\noindent\smash{\noindent\centerline{\headlineOne\Huge—}}}
+
+\begin{document}
+
+\begin{multicols}{3}
+
+\headlineLarge{\hspace{-20pt}Foreign Cables}
+
+\headlineTiny{Artist Divorced}
+
+\noindent
+PARIS, April 18 (By A.~P.).---Mrs.~Lucile Wolfe Burton was granted a
+divorce today from William O.\ Burton, American portrait painter, now
+living in Paris.
+
+\halfrule
+
+\headlineTiny{Gold in Glacier}
+
+\noindent
+STOCKHOLM, April 18 (By A.~P.).---Norwegians may seek unknown land,
+but some Swede engineers have found rich gold, silver and copper
+deposits in an arctic glacier, using new electrical prospecting
+apparatus.
+
+\halfrule
+
+\headlineTiny{Wrecked Train}
+
+\noindent
+MEXICO CITY, April 17 (By A.~P.).---The train which was wrecked near
+Pachuca was carrying troops from Pahuca to Ixmiquilpan.  Ten men were
+reported killed and 30 injured.  A military relief train was sent to
+the scene.
+
+\halfrule
+
+\headlineTiny{Prince Drove Truck}
+
+\noindent
+LONDON, April 18 (By A.~P.).---The prince of Wales is becoming a
+regular Harun Al Raschid.  It develops that during the strike he drove
+a motor truck and helped distribute milk to the poor.
+
+\halfrule
+
+\headlineTiny{100 Killed in Battle}
+
+\noindent
+TANGIER, Morocco, April 17 (By A.~P.).---More than a hundred members
+of the Spanish foreign legion are reported to have been killed and a
+large number wounded in fighting at Rio Martin, near Tetuan.  Another
+party numbering 360 persons are reported to have been surrounded in a
+ravine by the tribesmen, all being captured or killed.
+
+\halfrule
+
+\headlineTiny{Ignores Rebels}
+
+\noindent
+MANAGUCA, Nigaragua, April 17 (By A.~P.).---The revolutionary governor
+at Bluefields has called upon W.~J.~Crampton, American collector of
+customs there, to deliver the customs revenue to him.  The collector
+refused and has requested protection for himself and his staff against
+the rebels.
+
+\fullrule
+
+\headlineSmall{\hspace{-20pt}Brisbane Denies Marriage Rumors}
+
+\noindent
+Mr.~Luther Brisbane, proprietor of Arkham's own Brisbane Brick Works,
+today said there was ``absolutely nothing'' in rumors that he was soon
+to be married to Mrs.~Adolph Spreckles of San Francisco, widow of the
+nationally known sugar magnate.
+
+\halfrule
+
+\headlineSmall{\hspace{-20pt}Flashes Badge at Hotel, Pays \$5 Fine}
+
+\noindent
+Flashing a badge that looked like that worn by policemen, Roman
+Struck, 39 years old, 530 Powder Mill st., threatened the owners of a
+hotel at Gedney and Armitage st.\ with arrest.
+
+The sight of two policemen, who were called, induced Struck to step
+into his more accustomed role of a civilian.  When questioned by
+police as to why he made the impersonation, he replied, ``I thought it
+would be fun.''
+
+In district court today he was fined \$5 on charge of being drunk.
+
+\halfrule
+
+\headlineSmall{\hspace{-20pt}Brotherhood Opens Headquarters}
+
+\noindent
+The Silver Twilight Lodge, a fraternal organisation championing the
+advancement of the intellect and the study of the unknown, plans to
+open new headquarters in Boston in May.  Carl Stanford, the founder of
+the organisation, says he hopes to find many new members from among
+the New England intellectuals.
+
+\columnbreak
+
+\noindent
+\begin{minipage}[t][37\baselineskip]{2\columnwidth+1\columnsep}
+\headlineHUGE{\hspace{-37pt}Scotland destroyed}
+\headlineLarge{Earthquake shatters nation!}
+\fancyrule
+\vspace{-16pt}\headlineSmall{\newspaperSlab Hundreds of Thousands of Lives Lost in the Wreckage Caused by the Earthquake, Beyond All Accurate Counting or Identification.}
+
+\begin{multicols}{2}
+\noindent
+WESTMINSTER, England.---The earthquake which shook Scotland from
+center to circumference a few minutes after 5 o'clock on the XXth of
+August unleashed never-before-seen devastation, destroying most of the
+cities and towns in the nation, surpassing even the California
+Earthquake of 1906.  King George VI and Prime Minister David Lloyd
+George have called upon the Royal Society to offer some explanation of
+this catastrophe, as the British Isles are not known for such seismic
+activity.
+
+Scotland has been placed under military authority.  The various Royal
+Army Corps of Engineers, as well as drafted civil organisations, have
+been tasked with clearing the wreckage in the major cities and saving
+as many lives as can be found.  Due to the scale of the destruction,
+the operation is predicted to last for months.  Military and
+government authorities would not speculate on when Scotland will
+recover to its previous state.
+
+Though the cause of the earthquake is not yet known, geologists have
+been able to predict its likely origin: the north west coast, a region
+of large deep lochs, many of which have never been fully plumbed.
+They theorise that the waters may have hidden some spot of geological
+activity.  The Royal Navy have confirmed that the destruction in the
+coastal Morar area is significant.
+
+\headlineTiny{\normalfont\itshape Light Seen in Sky}
+
+\noindent
+Sailors in the North Sea report seeing a brilliant blue light rising
+into the sky minutes after the shaking began.  It is not yet known if
+this has any connexion to the earthquake.  Some scientists have
+speculated that the disturbance could have released trapped gasses,
+which affected the sunlight in unusual ways.
+
+\headlineTiny{\normalfont\itshape ``Feral Men'' Attacking Troops}
+
+\noindent
+Some dozens of people who felt the vibrations have been driven into
+lunacy by the experience, acting in a way which some have described as
+``feral.''  These afflicted individuals attack those around them, even
+the troops trying to aid them, with reckless abandon.  The army are
+trying to round up these people in order for them to receive care.
+
+\end{multicols}
+
+\vspace{-\baselineskip}\fullrule
+
+\end{minipage}
+
+\lipsum[5-7]
+
+\begin{minipage}[t][37\baselineskip]{2\columnwidth+1\columnsep}
+\end{minipage}
+
+\lipsum[8-13]
+
+
+\end{multicols}
+
+\end{document}
